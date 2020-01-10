@@ -10,7 +10,8 @@ namespace AppTabbedCarouselPage
         {
             InitializeComponent();
 
-            TabbedPage tb = new TabbedPage();
+            //TabbedPage tb = new TabbedPage();
+            CarouselPage tb = new CarouselPage();
             tb.Children.Add(new MainPage());
             tb.Children.Add(new Page1());
             tb.Children.Add(new Page2());

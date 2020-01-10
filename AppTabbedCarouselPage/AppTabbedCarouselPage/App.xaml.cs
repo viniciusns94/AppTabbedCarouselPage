@@ -10,7 +10,11 @@ namespace AppTabbedCarouselPage
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            TabbedPage tb = new TabbedPage();
+            tb.Children.Add(new MainPage());
+            tb.Children.Add(new Page1());
+            tb.Children.Add(new Page2());
+            MainPage = tb;
         }
 
         protected override void OnStart()
